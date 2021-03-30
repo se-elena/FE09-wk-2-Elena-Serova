@@ -1,0 +1,43 @@
+.stuff {
+  max-width: 100%;
+  padding: 100px 0;
+
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   }
+
+  &__item { 
+    max-width: 270px;
+    margin: 0 auto 30px;
+  }
+
+  &__photo {
+    margin-bottom: 30px;
+   }
+
+  &__name {
+    color: #2d3033;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 15px;
+   }
+
+  &__position {
+    color: #e84545;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+   }
+
+  &__desc {
+    color: #6c7279;
+    font-size: 14px;
+    margin-bottom: 30px;
+   }
+  &__social { }
+
+}

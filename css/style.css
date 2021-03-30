@@ -180,3 +180,33 @@
 
 .portfolio__item:hover .photo__subtitle {
   display: block; }
+
+.stuff {
+  max-width: 100%;
+  padding: 100px 0; }
+  .stuff__row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+  .stuff__item {
+    max-width: 270px;
+    margin: 0 auto 30px; }
+  .stuff__photo {
+    margin-bottom: 30px; }
+  .stuff__name {
+    color: #2d3033;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 15px; }
+  .stuff__position {
+    color: #e84545;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 30px; }
+  .stuff__desc {
+    color: #6c7279;
+    font-size: 14px;
+    margin-bottom: 30px; }
+
+/*# sourceMappingURL=style.css.map */
