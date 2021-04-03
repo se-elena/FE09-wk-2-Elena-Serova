@@ -1,0 +1,21 @@
+.footer {
+  width: 100%;
+  padding: 30px 0;
+  background-color: #313454; }
+  .footer__copyright {
+    color: #808080;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 7px;
+    text-align: center; }
+  .footer__author {
+    color: #808080;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center; }
+  .footer__author-span {
+    color: #fff; }
+
+.fa-heart {
+  color: red;
+  font-size: 12px; }

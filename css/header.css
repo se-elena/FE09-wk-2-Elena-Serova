@@ -24,6 +24,10 @@
     font-size: 20px;
     font-weight: 900;
     text-transform: uppercase; }
+    .header__logo:hover {
+      animation-name: rotation;
+      animation-duration: 0.5s;
+      animation-timing-function: linear; }
     .header__logo::after {
       content: "box";
       color: #fff;
@@ -33,7 +37,10 @@
     display: flex;
     justify-content: space-between; }
   .header__menu-item {
-    margin-left: 30px; }
+    margin-left: 30px;
+    transition: 0.5s; }
+    .header__menu-item:hover {
+      transform: scale(1.1, 1.1); }
   .header__menu-link {
     color: #fff;
     font-size: 13px;
@@ -80,4 +87,8 @@
       background-color: #fff;
       font-weight: 800; }
 
-/*# sourceMappingURL=header.css.map */
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -39,6 +40,10 @@
     font-size: 20px;
     font-weight: 900;
     text-transform: uppercase; }
+    .header__logo:hover {
+      animation-name: rotation;
+      animation-duration: 0.5s;
+      animation-timing-function: linear; }
     .header__logo::after {
       content: "box";
       color: #fff;
@@ -48,7 +53,10 @@
     display: flex;
     justify-content: space-between; }
   .header__menu-item {
-    margin-left: 30px; }
+    margin-left: 30px;
+    transition: 0.5s; }
+    .header__menu-item:hover {
+      transform: scale(1.1, 1.1); }
   .header__menu-link {
     color: #fff;
     font-size: 13px;
@@ -95,6 +103,11 @@
       background-color: #fff;
       font-weight: 800; }
 
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
 .features {
   padding: 110px 0 40px; }
   .features__list {
@@ -208,5 +221,202 @@
     color: #6c7279;
     font-size: 14px;
     margin-bottom: 30px; }
+  .stuff__social {
+    display: flex; }
+  .stuff__social-icon {
+    border: 1px solid #e8ecee;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    color: #c6cacc;
+    font-size: 22px;
+    transition: 0.3s; }
 
-/*# sourceMappingURL=style.css.map */
+.fa-facebook-f:hover {
+  color: #3b5998; }
+
+.fa-twitter:hover {
+  color: #00acee; }
+
+.fa-linkedin:hover {
+  color: #0e76a8; }
+
+.sliders {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 50px; }
+
+.slider-photo {
+  max-width: 50%;
+  background-color: #fff; }
+  .slider-photo__item {
+    overflow: hidden; }
+
+/* Слайдер */
+/* Слайдер запущен */
+/* Слайдер с точками */
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden; }
+
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+  align-items: flex-start; }
+
+/* Слайд */
+/* Слайд активный (показывается) */
+/* Слайд основной */
+/* Слайд по центру */
+/* Клонированный слайд */
+/* Стрелка */
+/* Стрелка влево */
+/* Стрелка вправо */
+/* Стрелка не активная */
+/* Точки (булиты) */
+/* Активная точка */
+/* Элемент точки */
+.slider-text {
+  max-width: 50%;
+  max-height: 500px;
+  background-color: #53354a; }
+  .slider-text__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 110px 80px 0; }
+  .slider-text__blockquote {
+    font-family: Cardo, sans-serif;
+    color: #fff;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 42px;
+    margin-bottom: 50px;
+    max-width: 500px; }
+  .slider-text__author {
+    font-family: Raleway, sans-serif;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 30px; }
+  .slider-text .slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .slider-text .slick-dots li {
+    list-style: none;
+    margin: 0 10px; }
+  .slider-text .slick-dots button {
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    border: none; }
+  .slider-text .slick-dots li.slick-active button {
+    background-color: #fff;
+    border: none; }
+
+.download {
+  padding: 100px 0; }
+  .download__title {
+    color: #2d3033;
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: center; }
+  .download__subtitle {
+    color: #2d3033;
+    font-size: 13x;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    text-align: center; }
+  .download__button {
+    color: #fff;
+    background-color: #e84545;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 46px;
+    text-transform: uppercase;
+    text-align: center;
+    max-width: 280px;
+    margin: 0 auto;
+    transition: 0.5s; }
+    .download__button:hover {
+      font-weight: 600;
+      background-color: #3a3e64; }
+
+.info {
+  width: 100%;
+  padding: 70px 0 80px;
+  background-color: #3a3e64; }
+  .info__row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+  .info__location, .info__social, .info__about {
+    width: 33.33%; }
+  .info__location-title, .info__social-title, .info__about-title {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center; }
+  .info__location-address, .info__about-text {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    text-align: center;
+    line-height: 26px; }
+  .info__location-address {
+    max-width: 150px;
+    margin: 0 auto; }
+  .info__about-text {
+    max-width: 320px;
+    margin: 0 auto; }
+  .info__social-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+  .info__social-icon {
+    border: 2px solid #fff;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    color: #fff;
+    font-size: 22px;
+    transition: 0.3s; }
+
+.footer {
+  width: 100%;
+  padding: 30px 0;
+  background-color: #313454; }
+  .footer__copyright {
+    color: #808080;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 7px;
+    text-align: center; }
+  .footer__author {
+    color: #808080;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center; }
+  .footer__author-span {
+    color: #fff; }
+
+.fa-heart {
+  color: red;
+  font-size: 12px; }

@@ -25,5 +25,25 @@
     color: #6c7279;
     font-size: 14px;
     margin-bottom: 30px; }
+  .stuff__social {
+    display: flex; }
+  .stuff__social-icon {
+    border: 1px solid #e8ecee;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    color: #c6cacc;
+    font-size: 22px;
+    transition: 0.3s; }
 
-/*# sourceMappingURL=stuff.css.map */
+.fa-facebook-f:hover {
+  color: #3b5998; }
+
+.fa-twitter:hover {
+  color: #00acee; }
+
+.fa-linkedin:hover {
+  color: #0e76a8; }

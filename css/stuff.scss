@@ -2,7 +2,6 @@
   max-width: 100%;
   padding: 100px 0;
 
-
   &__row {
     display: flex;
     justify-content: space-between;
@@ -38,6 +37,31 @@
     font-size: 14px;
     margin-bottom: 30px;
    }
-  &__social { }
+  &__social {
+    display: flex;
+   }
 
+  &__social-icon{
+     border: 1px solid #e8ecee;
+     width: 40px;
+     height: 40px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    margin-right: 5px;
+    color: #c6cacc;
+    font-size: 22px;
+    transition: 0.3s;
+   }
 }
+
+
+.fa-facebook-f:hover {
+  color: #3b5998;
+  }
+.fa-twitter:hover {
+  color: #00acee;
+  }
+.fa-linkedin:hover {
+  color: #0e76a8;
+  }
