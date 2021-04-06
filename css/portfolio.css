@@ -18,7 +18,8 @@
   .portfolio__photo {
     width: 100%;
     overflow: hidden;
-    display: block; }
+    display: block;
+    transition: 0.9s; }
 
 .photo__title {
   display: none;
@@ -48,5 +49,3 @@
 
 .portfolio__item:hover .photo__subtitle {
   display: block; }
-
-/*# sourceMappingURL=portfolio.css.map */

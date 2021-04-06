@@ -5,7 +5,7 @@ $(document).ready(function(){
     adaptiveHeight: true,
     slidesToShow:1,
     slidesToScroll: 1,
-    speed: 7000,
+    speed: 3000,
     easing: 'ease',
     infinfte: true,
     initialSlide: 0,
@@ -31,7 +31,7 @@ $(document).ready(function(){
     arrows: false,
     dots: true,
     fade: true,
-    speed: 1000,
+    speed: 3000,
     infinfte: true,
     asNavFor:".slider-photo"
   });
