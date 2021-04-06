@@ -32,6 +32,7 @@ $(document).ready(function(){
     dots: true,
     fade: true,
     speed: 1000,
+    infinfte: true,
     asNavFor:".slider-photo"
   });
 });
